@@ -10,18 +10,22 @@ const Index = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const projects = [
-    { name: "Proyek Gedung Perkantoran", location: "Jakarta", year: "2024", image: "https://placehold.co/400x300" },
-    { name: "Proyek Residential Complex", location: "Bandung", year: "2024", image: "https://placehold.co/400x300" },
-    { name: "Proyek Industrial Plant", location: "Surabaya", year: "2023", image: "https://placehold.co/400x300" },
-    { name: "Proyek Mall & Shopping Center", location: "Medan", year: "2023", image: "https://placehold.co/400x300" },
+    { name: "SIBORU AIRPORT", location: "Fakfak, Papua", year: "2022", image: "https://placehold.co/400x300" },
+    { name: "MENTAWAI AIRPORT", location: "Mentawai, Sumatera", year: "2022", image: "https://placehold.co/400x300" },
+    { name: "NUMFOR AIRPORT", location: "Biak Numfor, Papua", year: "2023", image: "https://placehold.co/400x300" },
+    { name: "ELELIM AIRPORT", location: "Yalimo, Papua", year: "2023", image: "https://placehold.co/400x300" },
+    { name: "TNI AL AMMUNITION DEPOT", location: "Sorong, Papua", year: "2023", image: "https://placehold.co/400x300" },
+    { name: "LUXURY HOUSE", location: "Menteng, Jakarta", year: "2024", image: "https://placehold.co/400x300" },
+    { name: "ROYAL HOTEL EXCLUSIVE", location: "Mangga Dua, Jakarta", year: "2024", image: "https://placehold.co/400x300" },
+    { name: "DEUTSCHE BANK", location: "Menteng, Jakarta", year: "2024", image: "https://placehold.co/400x300" },
   ];
 
   const skills = ["AutoCAD", "Civil 3D", "Inventor", "SketchUp", "Revit", "MasterCAM", "Microsoft Office"];
 
   const experiences = [
-    { title: "Senior Drafter", company: "PT. Engineering Solutions", period: "2022 - Sekarang", desc: "Memimpin tim drafting untuk proyek civil dan MEP" },
-    { title: "Drafter Civil & MEP", company: "CV. Konstruksi Prima", period: "2020 - 2022", desc: "Mengerjakan drafting detail untuk proyek komersial" },
-    { title: "Junior Drafter", company: "PT. Teknik Mandiri", period: "2018 - 2020", desc: "Mulai karir sebagai drafter electrical dan civil" },
+    { title: "Senior Drafter", company: "Ners Inti Persada", period: "2022 - 2023", desc: "Memimpin tim drafting untuk proyek civil dan MEP" },
+    { title: "Drafter Civil & MEP", company: "KMG Nusa Persada", period: "2023 - 2024", desc: "Mengerjakan drafting detail untuk proyek komersial" },
+    { title: "Junior Drafter", company: "Asraya Morden Persada", period: "2024 - Now", desc: "Mulai karir sebagai drafter electrical dan civil" },
   ];
 
   const achievements = [
@@ -105,7 +109,7 @@ const Index = () => {
               className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-3 text-lg shadow-lg hover:shadow-xl transition-all duration-300"
               onClick={() => scrollToSection('kontak')}
             >
-              Hubungi Saya
+              Let's Work Together
             </Button>
           </div>
         </div>
@@ -114,17 +118,23 @@ const Index = () => {
       {/* About Section */}
       <section id="tentang" className="py-16 px-4">
         <div className="container mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-slate-800 mb-12">Tentang Saya</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-slate-800 mb-12">About me</h2>
           
           <Card className="max-w-4xl mx-auto shadow-xl border-0 bg-white/80 backdrop-blur-sm">
             <CardContent className="p-8 md:p-12">
               <div className="grid md:grid-cols-2 gap-8 items-center">
                 <div className="order-2 md:order-1">
                   <p className="text-lg text-slate-700 leading-relaxed mb-6">
-                    Saya adalah seorang drafter profesional dengan pengalaman lebih dari 5 tahun dalam bidang civil, electrical, dan MEP (Mechanical, Electrical, Plumbing). Memiliki keahlian mendalam dalam software CAD terkini dan passionate dalam menghasilkan gambar teknik yang presisi.
+                    Experienced drafter with over 2 years' experience in civil,
+                    electronics and MEP projects. Proficient in AutoCAD, Civil 3D,
+                    Inventor, SketchUp, Revit and MasterCAM.
                   </p>
                   <p className="text-lg text-slate-700 leading-relaxed">
-                    Berpengalaman menangani berbagai proyek mulai dari residential, commercial, hingga industrial. Selalu berkomitmen untuk memberikan hasil terbaik dengan standar kualitas tinggi dan tepat waktu.
+                    I have been involved in
+                    various national projects, such as the construction of airports, hotels
+                    and luxury housing. I am ready to contribute precise and
+                    professional working drawings to the project team.
+
                   </p>
                 </div>
                 <div className="order-1 md:order-2 flex justify-center">
@@ -253,19 +263,19 @@ const Index = () => {
             <CardContent className="p-8">
               <div className="space-y-6">
                 <a 
-                  href="mailto:ridho.hafidz@email.com" 
+                  href="mailto:mridhohafidz843@gmail.com" 
                   className="flex items-center p-4 rounded-lg bg-slate-50 hover:bg-blue-50 transition-colors duration-300 group"
                 >
                   <Mail className="w-6 h-6 text-blue-600 mr-4" />
                   <div>
                     <p className="font-medium text-slate-800 group-hover:text-blue-600">Email</p>
-                    <p className="text-slate-600">ridho.hafidz@email.com</p>
+                    <p className="text-slate-600">mridhohafidz843@gmail.com</p>
                   </div>
                   <ExternalLink className="w-4 h-4 text-slate-400 ml-auto" />
                 </a>
                 
                 <a 
-                  href="https://wa.me/6281234567890" 
+                  href="https://wa.me/6282112169219" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="flex items-center p-4 rounded-lg bg-slate-50 hover:bg-green-50 transition-colors duration-300 group"
@@ -273,13 +283,13 @@ const Index = () => {
                   <Phone className="w-6 h-6 text-green-600 mr-4" />
                   <div>
                     <p className="font-medium text-slate-800 group-hover:text-green-600">WhatsApp</p>
-                    <p className="text-slate-600">+62 812-3456-7890</p>
+                    <p className="text-slate-600">+62821-1216-9219</p>
                   </div>
                   <ExternalLink className="w-4 h-4 text-slate-400 ml-auto" />
                 </a>
                 
                 <a 
-                  href="https://linkedin.com/in/ridho-hafidz" 
+                  href="https://linkedin.com/in/muhamadridhohafidz" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="flex items-center p-4 rounded-lg bg-slate-50 hover:bg-blue-50 transition-colors duration-300 group"
@@ -289,7 +299,7 @@ const Index = () => {
                   </div>
                   <div>
                     <p className="font-medium text-slate-800 group-hover:text-blue-600">LinkedIn</p>
-                    <p className="text-slate-600">linkedin.com/in/ridho-hafidz</p>
+                    <p className="text-slate-600">linkedin.com/in/muhamadridhohafidz</p>
                   </div>
                   <ExternalLink className="w-4 h-4 text-slate-400 ml-auto" />
                 </a>
